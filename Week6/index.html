@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub | Discover Games</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <h1>🎮 Game Hub</h1>
+        <button id="theme-button">Switch Theme</button>
+    </header>
+
+    <main class="container">
+        <section class="welcome">
+            <p class="eyebrow">YOUR NEXT ADVENTURE STARTS HERE</p>
+            <h2>Discover Your Next Favorite Game</h2>
+            <p>Explore games, find your favorites, and have fun!</p>
+            <button id="greeting-button">Click for a Greeting</button>
+            <p id="greeting-message" aria-live="polite">
+                Welcome to Game Hub!
+            </p>
+        </section>
+
+        <section class="games-section">
+            <h2>Explore Games</h2>
+            <p>Search for a game or hover over a card to explore.</p>
+
+            <label for="game-search">Search games</label>
+            <input
+                type="text"
+                id="game-search"
+                placeholder="Try Minecraft or Fortnite..."
+            >
+
+            <div class="game-grid" id="game-grid">
+                <article class="game-card">
+                    <div class="game-icon">🏝️</div>
+                    <h3>Minecraft</h3>
+                    <p>Build, explore, and create your own world.</p>
+                    <button class="favorite-button">Add to Favorites</button>
+                </article>
+
+                <article class="game-card">
+                    <div class="game-icon">🔫</div>
+                    <h3>Fortnite</h3>
+                    <p>Battle, build, and compete with other players.</p>
+                    <button class="favorite-button">Add to Favorites</button>
+                </article>
+
+                <article class="game-card">
+                    <div class="game-icon">🏎️</div>
+                    <h3>Mario Kart</h3>
+                    <p>Race against rivals using fun power-ups.</p>
+                    <button class="favorite-button">Add to Favorites</button>
+                </article>
+            </div>
+
+            <p id="search-message" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Game Hub &copy; 2026 | Made for gamers</p>
+    </footer>
+</body>
+</html>
